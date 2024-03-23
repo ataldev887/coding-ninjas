@@ -5,10 +5,10 @@ const server = http.createServer((req,res) => {
     if(req.url=='/product'){
         return res.end('This is a product page');
     }else if(req.url=='/user'){
-        res.end('This is a user page');
+        return res.end('This is a user page');
     }
     res.end('Welcome to Nodejs server');
 });
 server.listen(3200,() => {
-    console.log('Server is listening on port 3100');
+    console.log('Server is listening on port 3200');
 });
