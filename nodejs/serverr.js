@@ -1,6 +1,6 @@
 const http = require('http');
 
-const server = http.create.Server((req,res) => {
+const server = http.createServer((req,res) => {
     console.log(req.url);
     if(req.url=='/product'){
         return res.end('This is a product page');
