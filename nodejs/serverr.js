@@ -10,5 +10,5 @@ const server = http.createServer((req,res) => {
     res.end('Welcome to Nodejs server');
 });
 server.listen(3200,() => {
-    console.log('Server is listening on port 3100');
+    console.log('Server is listening on port 3200');
 });
